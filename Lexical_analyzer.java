@@ -89,6 +89,11 @@ public class Lexical_analyzer
                Token[j]='\0'; 
                 Search( );
                 j=0;
+                \\clear the array (fixing identifiers issue)
+                For (int n=0;n<10;n++)
+                    {
+                     Token[n]=0;
+                    }
              }
           }
        R_Tokens.close();
